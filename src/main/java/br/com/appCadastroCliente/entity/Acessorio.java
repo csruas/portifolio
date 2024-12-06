@@ -14,13 +14,11 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Proprietario {
+public class Acessorio {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String nome;
-	private int idade;
 
 }
-
