@@ -80,19 +80,4 @@ public class AcessorioController {
 		}
 	}
 
-
-//	
-//	@DeleteMapping("/delete/{id}")
-//	public ResponseEntity<String> delete( @PathVariable Long id) {
-//		try {
-//			String mensagem = marcaService.delete(id);
-//			return new ResponseEntity<String>(mensagem, HttpStatus.OK);
-//		} catch (Exception e) {
-//			return new ResponseEntity<String>("Marca deletada com sucesso", HttpStatus.BAD_REQUEST);
-//		}
-//		
-//	}
-	
-
-
 }

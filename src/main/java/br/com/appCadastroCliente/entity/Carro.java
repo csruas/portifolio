@@ -1,9 +1,14 @@
 package br.com.appCadastroCliente.entity;
 
+import java.util.List;
+
+import org.hibernate.annotations.ManyToAny;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,6 +30,10 @@ public class Carro {
 	
 	@ManyToOne
 	private Marca marca;
+	
+	@ManyToAny
+	@JoinTable(name = "carro_acessorio")
+	private List<Acessorio> acessorios;
 	
 
 		
